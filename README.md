@@ -4,28 +4,28 @@
 To perform integer matrix summation with a 2D-grid and 2D-blocks and find the best execution configuration.
 
 ## Procedure:
-# Step 1 :
+#Step 1 :
 Include the required files and library.
 
-# Step 2 :
+#Step 2 :
 Declare a function sumMatrixOnHost , to perform matrix summation on the host side . Declare three matrix A , B , C . Store the resultant matrix in C.
 
-# Step 3 :
+#Step 3 :
 Declare a function with __ global __ , which is a CUDA C keyword , to execute the function to perform matrix summation on GPU .
 
-# Step 4 :
+#Step 4 :
 Declare Main method/function .
 
-# Step 5 :
+#Step 5 :
 In the Main function Set up device and data size of matrix ,Allocate Host Memory and device global memory,Initialize data at host side and then add matrix at host side ,transfer data from host to device.
 
-# Step 6 :
+#Step 6 :
 Invoke kernel at host side , check for kernel error and copy kernel result back to host side.
 
-# Step 7 :
+#Step 7 :
 Finally Free device global memory,host memory and reset device.
 
-# Step 8 :
+#Step 8 :
 Save and Run the Program.
 
 ## program:
@@ -203,10 +203,10 @@ int main(int argc, char **argv)
 
 ## Output:
 ![image](https://github.com/Bhuvaneshwari-2003/PCA-Matrix-summation-with-a-2D-grid-and-2D-blocks.-Adapt-it-to-integer-matrix-addition.-/assets/94828604/3be52229-a877-4a36-8b11-0bfef8e59cb1)
-
+```
 Matrix initialization : 6.338138 sec.
 Sum matrix on Host : 0.884061 sec.
 Sum matrix on GPU2D : 0.012146 sec.
-
+```
 ## Result:
 Integer Matrix summation with a 2D-grid and 2D-blocks is performed and the best execution configuration is found successfully.
